@@ -5,7 +5,7 @@ import MImgLeft from "../img/global/m-left.png";
 import MImgRight from "../img/global/m-right.png";
 
 function ModalLogin() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   return (
     <div>
       {/* <Button variant="primary" onClick={() => setShow(true)}>

@@ -1,9 +1,11 @@
 import React, { useState } from "react"
 import { Button, Modal, ModalTitle, Form } from "react-bootstrap"
 import './Styles.css'
+import MImgLeft from "../img/global/m-left.png";
+import MImgRight from "../img/global/m-right.png";
 
 function ModalLogin() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   return (
     <div>
       <Modal
@@ -12,6 +14,8 @@ function ModalLogin() {
         dialogClassName="modal-90w"
         aria-labelledby="example-custom-modal-styling-title"
       >
+      <img src={MImgLeft} alt="modalimageleft" className="m-img-left" />
+      <img src={MImgRight} alt="modalimageleft" className="m-img-right" />
         <Modal.Body>
           <ModalTitle className="text-center mt-4 font-weight-bold">Register</ModalTitle>
           <Form className="p-3 mx-5">
