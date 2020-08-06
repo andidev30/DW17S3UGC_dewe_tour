@@ -1,0 +1,26 @@
+.judul {
+    margin-top: 50px;
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+
+    color: #FFFFFF;
+}
+
+.sub-judul {
+
+    font-family: Product Sans Thin;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 78px;
+
+    color: #FFFFFF;
+}
+
+.feature-img {
+    width: 70px;
+    height: 70px;
+}
