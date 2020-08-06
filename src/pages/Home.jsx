@@ -7,10 +7,14 @@ import Daun from '../components/img/global/daun.png'
 import './Styles.css'
 import ImgLeft from '../components/img/global/left.png'
 import ImgRight from '../components/img/global/right.png'
+import ModalLogin from '../components/section/ModalLogin'
+import ModalRegister from '../components/section/ModalRegister'
 
 function Home(){
     return(
         <div style={{background: "#E5E5E5"}}>
+        <ModalLogin />
+        <ModalRegister />
         <img src={ImgLeft} className="left" alt="left" />
         <img src={ImgRight} className="right" alt="right" />
             <Banner />

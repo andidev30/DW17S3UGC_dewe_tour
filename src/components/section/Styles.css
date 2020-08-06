@@ -5,22 +5,54 @@
     font-weight: bold;
     font-size: 64px;
     line-height: 78px;
-
     color: #FFFFFF;
 }
 
 .sub-judul {
-
     font-family: Product Sans Thin;
     font-style: normal;
     font-weight: 300;
     font-size: 64px;
     line-height: 78px;
-
     color: #FFFFFF;
 }
 
 .feature-img {
     width: 70px;
     height: 70px;
+}
+
+.m-title {
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.m-left {
+    position: absolute;
+    left: 7%;
+    right: 61.54%;
+    top: -11.41%;
+    bottom: 89.45%;
+    /* transform: rotate(31.36deg); */
+}
+
+.m-img-left {
+    position: absolute;
+    left: 0;
+    /* right: 61.54%; */
+    top: 0;
+    bottom: 89.45%;
+    /* transform: rotate(31.36deg); */
+}
+
+.m-img-right {
+    position: absolute;
+    left: 87%;
+    right: 0;
+    top: 0;
+    bottom: 74.09%;
+    /* transform: rotate(-98.59deg); */
 }
