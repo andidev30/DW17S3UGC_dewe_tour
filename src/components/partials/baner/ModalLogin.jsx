@@ -1,22 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Modal, ModalTitle, Form } from "react-bootstrap";
-import "./Styles.css";
-import MImgLeft from "../img/global/m-left.png";
-import MImgRight from "../img/global/m-right.png";
+import "./style.css";
+import MImgLeft from "../../img/global/m-left.png";
+import MImgRight from "../../img/global/m-right.png";
 
-function ModalLogin() {
-  const [show, setShow] = useState(false);
+function ModalLogin(props) {
   return (
     <div>
-      {/* <Button variant="primary" onClick={() => setShow(true)}>
-        Custom Width Modal
-      </Button> */}
-
       <Modal
-        show={show}
-        onHide={() => setShow(false)}
-        dialogClassName="modal-90w"
-        aria-labelledby="example-custom-modal-styling-title"
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
       >
         <img src={MImgLeft} alt="modalimageleft" className="m-img-left" />
         <img src={MImgRight} alt="modalimageleft" className="m-img-right" />

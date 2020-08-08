@@ -1,30 +1,31 @@
-import React, { useState } from "react"
-import { Button, Modal, ModalTitle, Form } from "react-bootstrap"
-import './Styles.css'
-import MImgLeft from "../img/global/m-left.png";
-import MImgRight from "../img/global/m-right.png";
+import React from "react";
+import { Button, Modal, ModalTitle, Form } from "react-bootstrap";
+import "./style.css";
+import MImgLeft from "../../img/global/m-left.png";
+import MImgRight from "../../img/global/m-right.png";
 
-function ModalLogin() {
-  const [show, setShow] = useState(true);
+function ModalLogin(props) {
   return (
     <div>
       <Modal
-        show={show}
-        onHide={() => setShow(false)}
-        dialogClassName="modal-90w"
-        aria-labelledby="example-custom-modal-styling-title"
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
       >
-      <img src={MImgLeft} alt="modalimageleft" className="m-img-left" />
-      <img src={MImgRight} alt="modalimageleft" className="m-img-right" />
+        <img src={MImgLeft} alt="modalimageleft" className="m-img-left" />
+        <img src={MImgRight} alt="modalimageleft" className="m-img-right" />
         <Modal.Body>
-          <ModalTitle className="text-center mt-4 font-weight-bold">Register</ModalTitle>
+          <ModalTitle className="text-center mt-4 font-weight-bold">
+            Register
+          </ModalTitle>
           <Form className="p-3 mx-5">
             <Form.Group controlId="formBasicName">
               <Form.Label className="m-title">Full Name</Form.Label>
               <Form.Control type="text" placeholder="Enter Full Name" />
             </Form.Group>
 
-            <Form.Group controlId="formBasicEmail"  className="mt-4">
+            <Form.Group controlId="formBasicEmail" className="mt-4">
               <Form.Label className="m-title">Email</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
             </Form.Group>
@@ -38,12 +39,18 @@ function ModalLogin() {
               <Form.Label className="m-title">Phone</Form.Label>
               <Form.Control type="text" placeholder="Phone" />
             </Form.Group>
-            <Button variant="warning" className="btn btn-block text-white font-weight-bold mt-4" type="submit">
+            <Button
+              variant="warning"
+              className="btn btn-block text-white font-weight-bold mt-4"
+              type="submit"
+            >
               Submit
             </Button>
           </Form>
           <div className="text-center">
-            <small className="text-muted text-center">have an account? ? Klik Here</small>
+            <small className="text-muted text-center">
+              have an account? ? Klik Here
+            </small>
           </div>
         </Modal.Body>
       </Modal>

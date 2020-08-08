@@ -13,12 +13,13 @@ function Baner() {
         backgroundImage: `url(${Background})`,
         height: "534px",
         repeat: "none",
+        padding: 0
       }}
     >
       <Container>
         <Navbar />
         <h1 className="judul ml-3">Explore</h1>
-        <h3 className="sub-judul ml-3">Your Amazing City Together</h3>
+        <h3 className="sub-judul ml-3">your amazing city together</h3>
         <Search />
       </Container>
     </Jumbotron>
