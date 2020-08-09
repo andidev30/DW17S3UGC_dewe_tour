@@ -65,7 +65,7 @@ function InfoTrip() {
       <DescTrip />
       <Price />
       <div className="d-flex justify-content-end mt-4">
-        <Link to="/booknow">
+        <Link to="/pay">
           <Button variant="warning text-white">
             <b>Book Now</b>
           </Button>

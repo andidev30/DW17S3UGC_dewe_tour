@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 import Home from './pages/Home'
 import Trip from './pages/Trip'
-import BookNow from './pages/BookNow'
+import Pay from './pages/Pay'
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
         <Route path="/trip">
           <Trip />
         </Route>
-        <Route path="/booknow">
-          <BookNow />
+        <Route path="/pay">
+          <Pay />
         </Route>
         <Route path="/">
           <Home />
