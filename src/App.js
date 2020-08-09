@@ -12,11 +12,15 @@ import Profile from './pages/Profile'
 import Transaction from './pages/Transaction'
 import Trip from './pages/Trip'
 import TripAdd from './pages/TripAdd'
+import PayPending from './pages/PayPending'
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/pay-pending">
+          <PayPending />
+        </Route>
         <Route path="/trip/add">
           <TripAdd />
         </Route>

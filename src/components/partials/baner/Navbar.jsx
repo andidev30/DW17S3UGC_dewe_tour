@@ -11,7 +11,7 @@ function Navbar() {
   const [show, setShow] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
   // const [isLogedIn, setLogin] = useState(true);
-  const isLoggedIn = true;
+  const isLoggedIn = false;
   const [isProfileDropdown, setProfileDropdown] = useState(false);
 
   const showProfileDropdown = () => {
