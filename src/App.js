@@ -8,6 +8,7 @@ import {
 import Home from './pages/Home'
 import Trip from './pages/Trip'
 import Pay from './pages/Pay'
+import Profile from './pages/Profile'
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/pay">
           <Pay />
+        </Route>
+        <Route path="/profile">
+          <Profile />
         </Route>
         <Route path="/">
           <Home />
