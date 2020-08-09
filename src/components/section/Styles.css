@@ -79,3 +79,13 @@
 
     color: #000000;
 }
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+.daun{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

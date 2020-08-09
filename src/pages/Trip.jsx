@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
-import Footer from "../components/section/Footer";
 import Navbar from "../components/partials/baner/Navbar";
 import Background from "../components/img/global/bg.png";
 import Tour from "../components/section/Tour";
@@ -18,7 +17,7 @@ function Trip() {
           <Navbar />
         </Container>
       </div>
-      <div style={{ background: "#E5E5E5" }}>
+      <div style={{ background: "#E5E5E5", paddingBottom:"100px" }}>
         <Container className="">
           <div className="px-3 pt-5">
             <Link to="/trip/add">
@@ -34,7 +33,6 @@ function Trip() {
           <Tour />
         </Container>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -13,9 +13,16 @@ import Transaction from './pages/Transaction'
 import Trip from './pages/Trip'
 import TripAdd from './pages/TripAdd'
 import PayPending from './pages/PayPending'
+import Footer from "./components/section/Footer";
+import './App.css'
+// import ImgLeft from "./components/img/global/left.png";
+// import ImgRight from "./components/img/global/right.png";
 
 function App() {
   return (
+    <div className="app">
+    {/* <img src={ImgLeft} className="img-left" alt="left" />
+    <img src={ImgRight} className="img-right" alt="right" /> */}
     <Router>
       <Switch>
         <Route path="/pay-pending">
@@ -44,6 +51,8 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    <Footer />
+    </div>
   );
 }
 

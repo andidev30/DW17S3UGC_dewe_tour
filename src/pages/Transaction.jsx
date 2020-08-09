@@ -2,12 +2,11 @@ import React from "react";
 import Background from "../components/img/global/bg.png";
 import { Container } from "react-bootstrap";
 import Navbar from "../components/partials/baner/Navbar";
-import Footer from "../components/section/Footer";
 import DataTransaction from "../components/partials/transaction/DataTransaction";
 
 function Transaction() {
   return (
-    <div style={{ background: "#E5E5E5" }}>
+    <div style={{ background: "#E5E5E5", paddingBottom:"100px" }}>
       <div
         style={{
           backgroundImage: `url(${Background})`,
@@ -24,7 +23,6 @@ function Transaction() {
         Incoming Transaction
       </h4>
       <DataTransaction />
-      <Footer />
     </div>
   );
 }

@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../components/partials/baner/Navbar";
 import { Container } from "react-bootstrap";
 import Background from "../components/img/global/bg.png";
-import Footer from "../components/section/Footer";
 import CardPay from "../components/section/CardPay";
 import { Button } from "react-bootstrap";
 import ModalPay from "../components/partials/CardPay/ModalPay";
@@ -10,7 +9,7 @@ import ModalPay from "../components/partials/CardPay/ModalPay";
 function Pay() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
-    <div style={{ background: "#E5E5E5" }}>
+    <div style={{ background: "#E5E5E5", paddingBottom:"100px" }}>
       <div
         style={{
           backgroundImage: `url(${Background})`,
@@ -31,8 +30,6 @@ function Pay() {
         Pay
       </Button>
       <ModalPay show={modalShow} onHide={() => setModalShow(false)} />
-      <br />
-      <Footer />
     </div>
   );
 }
