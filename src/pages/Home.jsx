@@ -17,6 +17,7 @@ function Home() {
       <Features />
       <br />
       <br />
+      <h2 className="mt-5 text-center">Group Tour</h2>
       <Tour />
       <img src={Daun} className="daun" alt="daun" />
       <Footer />

@@ -55,12 +55,11 @@ function Tour() {
   ];
   return (
     <Container>
-      <h2 className="mt-5 text-center">Group Tour</h2>
-      <Row className="px-5 mt-3">
+      <Row className="mt-3">
         <Col>
           <CardColumns>
             {tourData.map((td) => (
-              <Link to="/trip" key={td.id}>
+              <Link to="/detail-trip" key={td.id}>
                 <Card>
                   <Card.Img variant="top" src={td.img} className="p-1" />
                   <Card.Body>
