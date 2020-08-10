@@ -43,7 +43,7 @@ function InfoTrip() {
       <h5 className="mt-5 px-2 font-weight-bold">Information Trip</h5>
       <CardGroup className="mx-1 pt-3">
         {infoTrip.map((fe) => (
-          <Card>
+          <Card key={fe.id}>
             <Card.Title
               className="col-4 info-trip-title mb-0 pb-0 mt-3"
               key={fe.id}
