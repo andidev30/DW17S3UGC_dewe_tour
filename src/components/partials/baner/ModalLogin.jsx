@@ -5,6 +5,7 @@ import MImgLeft from "../../img/global/m-left.png";
 import MImgRight from "../../img/global/m-right.png";
 
 function ModalLogin(props) {
+  // console.log(...props)
   return (
     <div>
       <Modal

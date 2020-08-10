@@ -61,7 +61,7 @@ function Navbar() {
             </div>
           </nav>
         </Col>
-        <ModalLogin show={show} onHide={() => setShow(false)} />
+        {show && <ModalLogin show={show} onHide={() => setShow(false)} />}
         <ModalRegister
           show={showRegister}
           onHide={() => setShowRegister(false)}
