@@ -21,7 +21,7 @@ import LoginContext from './context/LoginContext'
 
 function App() {
   const status = {
-    isLoggedIn: false,
+    isLoggedIn: true,
     role: false
   }
   return (

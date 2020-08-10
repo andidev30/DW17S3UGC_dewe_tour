@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./style.css";
 import D1 from "../../img/dropdown/user 2.png";
 import D2 from "../../img/dropdown/Vector.png";
@@ -6,13 +6,14 @@ import D3 from "../../img/dropdown/logout 1.png";
 import D4 from "../../img/dropdown/journey 1.png";
 import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import LoginContext from '../../../context/LoginContext'
 
 function ProfileDropdown() {
-  const role = true;
+  const status = useContext(LoginContext)
   return (
     <div>
       <div className="kotak">
-        {!role && (
+        {!status.role && (
           <>
             <Link to="/profile">
               <p>
@@ -28,7 +29,7 @@ function ProfileDropdown() {
             </Link>
           </>
         )}
-        {role && (
+        {status.role && (
           <Link to="/trip">
             <p>
               <Image src={D4} className="mr-3" />
@@ -38,10 +39,10 @@ function ProfileDropdown() {
         )}
         <hr />
         <Link to="">
-        <p>
-          <Image src={D3} className="mr-3" />
-          <span className="text-dark font-weight-bold">Log Out</span>
-        </p>
+          <p>
+            <Image src={D3} className="mr-3" />
+            <span className="text-dark font-weight-bold">Log Out</span>
+          </p>
         </Link>
       </div>
     </div>
