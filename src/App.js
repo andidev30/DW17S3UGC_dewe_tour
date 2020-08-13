@@ -17,10 +17,16 @@ import Footer from "./components/section/Footer";
 import './App.css'
 // import ImgLeft from "./components/img/global/left.png";
 // import ImgRight from "./components/img/global/right.png";
+import LoginContext from './context/LoginContext'
 
 function App() {
+  const status = {
+    isLoggedIn: true,
+    role: false
+  }
   return (
-    <div className="app">
+    <>
+    <LoginContext.Provider value={status}>
     {/* <img src={ImgLeft} className="img-left" alt="left" />
     <img src={ImgRight} className="img-right" alt="right" /> */}
     <Router>
@@ -52,7 +58,8 @@ function App() {
       </Switch>
     </Router>
     <Footer />
-    </div>
+    </LoginContext.Provider>
+    </>
   );
 }
 
